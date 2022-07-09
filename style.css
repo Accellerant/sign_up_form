@@ -29,4 +29,5 @@ body {
     background-image: url("./assets/Images/background.jpg");
     background-size: 675px;
     min-height: 100vh;
+    background-position-x: center;
 }
