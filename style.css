@@ -25,24 +25,40 @@ body {
     height: 150px;
 }
 
-.splash_logo {
+/* 
+The left side of the page - Main Container 
+Parent of the following: 
+    .logo
+    .credits
+*/
+.container_splash {
     background-image: url("./assets/Images/background.jpg");
     background-size: 675px;
-    min-height: 100vh;
+    /* Keeps image centered when resizing page horizontally. */
     background-position-x: center;
+    /* Element takes up 100% of the page. */
+    min-height: 100vh;
+    min-width: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-position-x: center;
 }
 
+/* 
+Houses the image and name of the company.
+Child element of .container_splash.
+*/
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Creates space based on view height */
     margin-top: 15vh;
+    /* Goes to the max width of its parent */
     width: 100%;
     background-color: hsla(0, 0%, 96.9%, 0.79);
     padding: 2em 0;
+    /* Added to have the logo NOT clip */
+    overflow: hidden;
 }
