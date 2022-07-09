@@ -1,5 +1,23 @@
-h1 {
-    color: #3c4e99;
+/*
+Author: Matthew Davis
+Project: Odin Project: Sign-Up Form
+Date Created: July 1st, 2022
+
+Goal: 
+Create a faux sign-up website utilizing what we've 
+learned thusfar. The project will include the following:
+    * EMMET Usage
+    * Form Basics
+    * Form Validation
+    * Utilizing a Default Style.css file
+    * Using CSS Units (vh/vw, em/rem)
+    * Utilizing a System Font Stack
+    * CSS Functions for Responsiveness
+    * Custom Propertie(s)
+*/
+
+body {
+    display: flex;
 }
 
 .img_logo {
