@@ -20,11 +20,6 @@ body {
     display: flex;
 }
 
-.img_logo {
-    width: 150px;
-    height: 150px;
-}
-
 /* 
 The left side of the page - Main Container 
 Parent of the following: 
@@ -46,6 +41,14 @@ Parent of the following:
 }
 
 /* 
+The main logo image.
+*/
+.img_logo {
+    width: 150px;
+    height: 150px;
+}
+
+/* 
 Houses the image and name of the company.
 Child element of .container_splash.
 */
@@ -60,5 +63,16 @@ Child element of .container_splash.
     background-color: hsla(0, 0%, 96.9%, 0.79);
     padding: 2em 0;
     /* Added to have the logo NOT clip */
+    overflow: hidden;
+}
+
+/*
+
+Child element of .container_splash.
+*/
+.credits {
+    margin: auto auto 1vw;
+    text-align: center;
+    padding: 0 .5vw .5vw;
     overflow: hidden;
 }
