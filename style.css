@@ -18,6 +18,9 @@ learned thusfar. The project will include the following:
 
 body {
     display: flex;
+    /* Element takes up 100% of the page. */
+    min-height: 100vh;
+    gap: 3vw;
 }
 
 /* 
@@ -31,8 +34,6 @@ Parent of the following:
     background-size: 675px;
     /* Keeps image centered when resizing page horizontally. */
     background-position-x: center;
-    /* Element takes up 100% of the page. */
-    min-height: 100vh;
     min-width: 35vw;
     display: flex;
     flex-direction: column;
@@ -75,4 +76,11 @@ Child element of .container_splash.
     text-align: center;
     padding: 0 .5vw .5vw;
     overflow: hidden;
+}
+
+.container_sign_up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
 }
