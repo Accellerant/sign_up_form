@@ -78,9 +78,36 @@ Child element of .container_splash.
     overflow: hidden;
 }
 
+/*
+The right most part of the page: a primary container. 
+Is the parent of the following classes: 
+    .msg_bork
+    .credentials
+    .form_inputs
+    .log-in
+
+*/
 .container_sign_up {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5vh;
+}
+
+/*
+Main container elements for pairs 
+of related input elements.
+*/
+.form_inputs > div {
+    display: flex;
+    gap: 5vw;
+}
+
+/*
+Container divs for each individual
+label/input pair.
+*/
+.form_inputs > div > div {
+    display: flex;
+    flex-direction: column;
 }
