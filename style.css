@@ -43,6 +43,7 @@ Repo: https://github.com/csstools/system-font-css/blob/gh-pages/system-font.css
 :root {
     --safe-fonts: system-ui, monospace, Verdana, Helvetica, 
                 'Times New Roman', 'Courier New', monospace;
+    font-family: var(--safe-fonts);
 }
 
 body {
