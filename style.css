@@ -16,10 +16,45 @@ learned thusfar. The project will include the following:
     * Custom Propertie(s)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@font-face {
+    font-family: logo-font;
+    src: url(./assets/a-attack-graffiti-font/AttackGraffiti-3zRBM.ttf);
+}
+
+/*
+This snippet of code was done by Jonathan Neal
+Twitter:  https://twitter.com/jon_neal
+Repo: https://github.com/csstools/system-font-css/blob/gh-pages/system-font.css
+*/
+@font-face {
+	font-family: system-ui;
+	font-style: normal;
+	font-weight: 400;
+	src: local(".SFNS-Regular"), local(".SFNSText-Regular"), 
+        local(".HelveticaNeueDeskInterface-Regular"), 
+        local(".LucidaGrandeUI"), local("Segoe UI"), 
+        local("Ubuntu"), local("Roboto-Regular"), 
+        local("DroidSans"), 
+        local("Tahoma");
+}
+
+:root {
+    --safe-fonts: system-ui, monospace, Verdana, Helvetica, 
+                'Times New Roman', 'Courier New', monospace;
+}
+
 body {
     display: flex;
     /* Element takes up 100% of the page. */
     min-height: 100vh;
+}
+
+/* Splash Logo Font */
+h1 {
+    font-family: logo-font, "Permanent Marker", var(--safe-fonts);
+    letter-spacing: 1vw;
 }
 
 /* 
