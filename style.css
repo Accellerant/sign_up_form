@@ -74,7 +74,7 @@ Parent of the following:
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 0;
+    z-index: 1;
 }
 
 /* 
@@ -130,7 +130,7 @@ Is the parent of the following classes:
     flex-direction: column;
     justify-content: center;
     gap: 4vh;
-    z-index: -1;
+    z-index: 0;
 }
 
 .container_sign_up > div {
