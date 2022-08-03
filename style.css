@@ -43,7 +43,12 @@ Repo: https://github.com/csstools/system-font-css/blob/gh-pages/system-font.css
 :root {
     --safe-fonts: system-ui, monospace, Verdana, Helvetica, 
                 'Times New Roman', 'Courier New', monospace;
-    font-family: var(--safe-fonts);
+    font-family: Helvetica, var(--safe-fonts);
+
+    /* Background Drop Shadow utilized by
+        .credentials and .log-in > button.
+    */
+    --bgDropShadow: 5px 10px 25px #777;
 }
 
 body {
@@ -56,6 +61,13 @@ body {
 h1 {
     font-family: logo-font, "Permanent Marker", var(--safe-fonts);
     letter-spacing: 1vw;
+}
+
+/*
+For the two words italicized in index.html.
+*/
+span {
+    font-style: italic;
 }
 
 /* 
@@ -133,8 +145,29 @@ Is the parent of the following classes:
     z-index: 0;
 }
 
+/*
+Provided equal padding for ALL the divs
+next to the splash image.
+*/
 .container_sign_up > div {
     padding-left: 3vw;
+}
+
+/*
+Have the main paragraph messages be of
+exactly the same size and weight.
+*/
+.msg_action_title, .msg_bork {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*
+Eliminates extra space between this and
+its parent container: .credentials.
+*/
+.msg_action_title{ 
+    margin-top: 0;
 }
 
 /*
@@ -143,8 +176,8 @@ information.
 */
 .credentials {
     background-color: #eee;
-    padding: 3vh 0 5vh 3vw;
-    box-shadow: 5px 10px 25px #777;
+    padding: 3vh 0 5vh;
+    box-shadow: var(--bgDropShadow);
 }
 
 /* 
@@ -172,4 +205,17 @@ label/input pair.
 .form_inputs > div > div {
     display: flex;
     flex-direction: column;
+}
+
+/*
+For the only button on the page: create account.
+*/
+.log-in > button {
+    padding: 15px 50px;
+    border-style: none;
+    border-radius: 8px;
+    background: #455b13;
+    color: white;
+    font-weight: 1000;
+    box-shadow: var(--bgDropShadow);
 }
